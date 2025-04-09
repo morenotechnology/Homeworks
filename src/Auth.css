@@ -1,0 +1,111 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* FONDO GENERAL */
+  body {
+    background-color: #f5f6f7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  
+  /* CONTENEDOR GENERAL */
+  .auth-container {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
+  
+  /* TÍTULOS */
+  .auth-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* INPUTS */
+  .auth-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .auth-container input:focus {
+    border-color: #3b82f6;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* BOTÓN PRINCIPAL */
+  .auth-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .auth-container button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* BOTÓN GOOGLE SECUNDARIO */
+  .google-btn {
+    background-color: #f3f4f6;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    margin-top: 10px;
+  }
+  
+  .google-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  /* MENSAJES */
+  .auth-container .error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .auth-container .success {
+    color: #16a34a;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* SEPARACIÓN ENTRE COMPONENTES SI TIENES MÁS DE UNO */
+  .auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
