@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tree-logo {
+  height: 7em;
+  padding: 2em;
+  will-change: filter, transform;
+  transition: filter 400ms ease, transform 400ms ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+  background: linear-gradient(135deg, #6c7bff, #8fa1ff);
+  cursor: pointer;
+}
+.tree-logo:hover {
+  filter: drop-shadow(0 0 2.5em #646cffcc);
+  transform: scale(1.05);
+}
+.tree-logo.react:hover {
+  filter: drop-shadow(0 0 3em #61dafbaa);
+  transform: rotate(10deg) scale(1.1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .tree-logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  margin-top: 1rem;
+}
+
+/* Binary Tree Styles */
+.binary-tree {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.tree-node {
+  border: 2px solid #6c7bff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 0 1rem;
+  position: relative;
+  background-color: #f0f4ff;
+  box-shadow: 0 2px 6px rgba(108, 123, 255, 0.2);
+}
+
+.tree-node::before,
+.tree-node::after {
+  content: '';
+  position: absolute;
+  border-top: 2px solid #6c7bff;
+  top: 0;
+  width: 1rem;
+  height: 1rem;
+}
+
+.tree-node::before {
+  left: -1rem;
+  border-left: 2px solid #6c7bff;
+  border-top: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tree-node::after {
+  right: -1rem;
+  border-right: 2px solid #6c7bff;
+  border-top: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tree-node:first-child::before,
+.tree-node:last-child::after {
+  border: none;
+}
